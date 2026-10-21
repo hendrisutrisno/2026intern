@@ -1,0 +1,33 @@
+# CSDI Lab — a short, personal research internship journey
+# Change the repository name in baseurl after using this template.
+title: "My Taiwan Internship Journey"
+url: "https://hendrisutrisno.github.io"
+baseurl: "/2026intern"
+markdown: kramdown
+timezone: Asia/Taipei
+
+# Internships may last 2–6 months. Add only the months that actually occurred.
+collections:
+  months:
+    output: true
+    permalink: /journey/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: months
+    values:
+      layout: month
+
+demo: true  # Switch to false after replacing the example monthly entries.
+intern:
+  name: "Intern 王小明"
+  program: "TEEP Research Internship"
+  lab: "CSDI Lab"
+  university: "National Taipei University of Technology"
+  home_university: "Home university (optional)"
+  country: ""  # Optional; show only if you want to share this detail
+  stay: "October–December 2026"
+  focus: "Learning to apply AI and data analysis to real problems"
+  summary: "New ideas in the lab, good food after class, and plenty of discoveries along the way. Here's my Taiwan story!"
+  looking_back: "I'll add my final reflection here: the skills I've gained, the people I've met, and the memories I'll take home."

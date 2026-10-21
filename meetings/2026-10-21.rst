@@ -1,0 +1,33 @@
+Sample Research Check-in — 2026-10-21
+=====================================
+
+:Intern: Intern 王小明 (EXAMPLE ONLY)
+:Date: 2026-10-21
+:Meeting: Regular Check-in
+
+1. Since Our Last Meeting
+-------------------------
+
+- I learned how to write a short research meeting note.
+- I experimented with basic data visualization in a notebook.
+
+2. One Thing I Learned
+----------------------
+
+- A small, well-described experiment is better than a long list of tasks.
+
+3. Questions for the Meeting
+----------------------------
+
+- How should I explain my results in a simple figure?
+
+4. My Next Small Steps
+----------------------
+
+- Try a baseline method.
+- Prepare one figure for discussion.
+
+5. After the Meeting
+--------------------
+
+- This is only a sample. Replace it with a real note inside a private intern repository.

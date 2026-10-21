@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.intern.name | escape }} — Taiwan internship journey at {{ site.intern.lab | escape }}, NTUT">
+  <title>{{ page.title | default: site.title | escape }} | {{ site.intern.name | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">C</span><span>CSDI Lab</span> <span class="brand-separator">/</span> <span class="brand-secondary">Taiwan Internship</span></a>
+      <nav aria-label="Main navigation"><a href="{{ '/' | relative_url }}">Home</a></nav>
+    </header>
+    <main id="main">{{ content }}</main>
+    <footer class="site-footer">
+      <span>{{ site.intern.name | escape }} · {{ site.intern.lab | escape }} · NTUT</span>
+      <span>A little record of research, growth, and Taiwan life.</span>
+    </footer>
+  </div>
+</body>
+</html>
