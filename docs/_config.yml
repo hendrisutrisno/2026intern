@@ -1,0 +1,38 @@
+# CSDI Lab — a short, personal research internship journey
+# Change the repository name in baseurl after using this template.
+title: "My Taiwan Internship Journey"
+url: "https://hendrisutrisno.github.io"
+baseurl: "/2026intern"
+markdown: kramdown
+timezone: Asia/Taipei
+
+# Add one highlight file per two-week period actually spent in Taiwan.
+collections:
+  highlights:
+    output: true
+    permalink: /journey/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: highlights
+    values:
+      layout: month
+
+exclude:
+  - _site/
+  - .jekyll-cache/
+  - .sass-cache/
+
+demo: false  # Switch to false after replacing the example monthly entries.
+intern:
+  name: "Trial Name"
+  program: "TEEP Research Internship"
+  lab: "CSDI Lab"
+  university: "National Taipei University of Technology"
+  home_university: "Your Home University"
+  country: "Your Country"  # Optional; show only if you want to share this detail
+  stay: "Month YYYY - Month YYYY"
+  focus: "Your research focus"
+  summary: "A short introduction in your own words."
+  looking_back: "My final reflections; update this near the end of my stay."

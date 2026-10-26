@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.intern.name | escape }} — Taiwan internship journey at {{ site.intern.lab | escape }}, NTUT">
+  <title>{{ page.title | default: site.title | escape }} | {{ site.intern.name | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <!-- Apply saved theme before paint to avoid flash -->
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">C</span><span>CSDI Lab</span> <span class="brand-separator">/</span> <span class="brand-secondary">Taiwan Internship</span></a>
+      <nav aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="theme-icon" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+    <main id="main">{{ content }}</main>
+    <footer class="site-footer">
+      <span>{{ site.intern.name | escape }} · {{ site.intern.lab | escape }} · NTUT</span>
+      <span>A little record of research, growth, and Taiwan life.</span>
+    </footer>
+  </div>
+  <script>
+    (function() {
+      var btn = document.getElementById('theme-toggle');
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      }
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>

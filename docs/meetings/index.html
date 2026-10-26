@@ -1,0 +1,30 @@
+---
+layout: default
+title: Regular Meetings
+permalink: /meetings/
+---
+
+<div class="eyebrow">LAB CHECK-INS</div>
+<h1 class="page-heading">Regular Meetings</h1>
+<p class="lead narrow">Little research notes from {{ site.intern.name | escape }}'s internship. These help us keep track of ideas, questions, and next steps.</p>
+
+<div class="info-strip"><strong>Before each meeting:</strong> Write a brief <code>.rst</code> update at least 24 hours ahead. Add the discussion decisions afterwards. Meeting notes are password-protected.</div>
+
+{% assign dates = site.data.meetings %}
+{% if dates and dates.size > 0 %}
+<ul class="meeting-list">
+{% for date in dates %}
+  {% assign note_path = '/meetings/' | append: date | append: '.html' %}
+  <li>
+    <a href="{{ note_path | relative_url }}">
+      <span class="meeting-icon" aria-hidden="true">&#128274;</span>
+      <span class="meeting-main"><strong>{{ date | escape }}</strong><small>Regular research meeting · password required</small></span>
+      <span class="meeting-arrow" aria-hidden="true">&#8594;</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<div class="empty-state">No meetings yet. Add <code>meetings/YYYY-MM-DD.rst</code> in the repository to create the first encrypted meeting page.</div>
+{% endif %}
+<p class="backlink"><a href="{{ '/' | relative_url }}">&#8592; Back to my Taiwan journey</a></p>
