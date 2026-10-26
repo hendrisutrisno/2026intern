@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trial Name — Taiwan internship journey at CSDI Lab, NTUT">
+  <title>Regular Meetings | Trial Name</title>
+  <link rel="stylesheet" href="/2026intern/assets/style.css">
+  <!-- Apply saved theme before paint to avoid flash -->
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="/2026intern/"><span class="brand-mark">C</span><span>CSDI Lab</span> <span class="brand-separator">/</span> <span class="brand-secondary">Taiwan Internship</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/2026intern/">Home</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="theme-icon" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+    <main id="main"><div class="eyebrow">LAB CHECK-INS</div>
+<h1 class="page-heading">Regular Meetings</h1>
+<p class="lead narrow">Little research notes from Trial Name's internship. These help us keep track of ideas, questions, and next steps.</p>
+
+<div class="info-strip"><strong>Before each meeting:</strong> Write a brief <code>.rst</code> update at least 24 hours ahead. Add the discussion decisions afterwards. Meeting notes are password-protected.</div>
+
+
+
+<div class="empty-state">No meetings yet. Add <code>meetings/YYYY-MM-DD.rst</code> in the repository to create the first encrypted meeting page.</div>
+
+<p class="backlink"><a href="/2026intern/">&#8592; Back to my Taiwan journey</a></p>
+</main>
+    <footer class="site-footer">
+      <span>Trial Name · CSDI Lab · NTUT</span>
+      <span>A little record of research, growth, and Taiwan life.</span>
+    </footer>
+  </div>
+  <script>
+    (function() {
+      var btn = document.getElementById('theme-toggle');
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      }
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>

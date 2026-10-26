@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trial Name — Taiwan internship journey at CSDI Lab, NTUT">
+  <title>Finding my rhythm, one discovery at a time | Trial Name</title>
+  <link rel="stylesheet" href="/2026intern/assets/style.css">
+  <!-- Apply saved theme before paint to avoid flash -->
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="/2026intern/"><span class="brand-mark">C</span><span>CSDI Lab</span> <span class="brand-separator">/</span> <span class="brand-secondary">Taiwan Internship</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/2026intern/">Home</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="theme-icon" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+    <main id="main"><article class="story-page">
+  <p class="backlink"><a href="/2026intern/#journey">&#8592; Highlight every two weeks</a></p>
+  <div class="demo-banner"><strong>Sample story:</strong> Replace this with the intern's own experiences before using the site for evaluation.</div>
+  <div class="eyebrow">MY TAIWAN INTERNSHIP · OCTOBER 2026</div>
+  <h1>Finding my rhythm, one discovery at a time</h1>
+  <p class="lead">One chapter of my internship at CSDI Lab.</p>
+  
+  <div class="story-summary">
+    <div><span>IN THE LAB</span><p>I began comparing results, discussed questions with the team, and learned to explain what my experiments mean.</p></div>
+    <div><span>IN TAIWAN</span><p>I explored a new neighborhood, shared food with friends, and became a little more confident getting around Taiwan.</p></div>
+    <div><span>WHAT I LEARNED</span><p>Research progress is not always a perfect result; understanding why something failed matters too.</p></div>
+  </div>
+  <div class="story-body"><h2 id="research-notes">Research notes</h2>
+
+<p>This is another <strong>fictional sample entry</strong> so you can see how a two-month journey looks. Discuss one real experiment, presentation, training session, or contribution, and link only to material approved for public sharing.</p>
+
+<h2 id="life-beyond-research">Life beyond research</h2>
+
+<p>Share a personal experience outside the lab, such as a local event, a museum visit, a language-learning moment, a hike, or a new friendship. Keep it authentic and in your own voice.</p>
+
+<h2 id="what-changed-since-last-month">What changed since last month?</h2>
+
+<p>Describe how your skills, confidence, or understanding changed. Mention a next step that you’re looking forward to.</p>
+</div>
+  
+  <p class="backlink"><a href="/2026intern/#journey">&#8592; Back to the journey</a></p>
+</article>
+</main>
+    <footer class="site-footer">
+      <span>Trial Name · CSDI Lab · NTUT</span>
+      <span>A little record of research, growth, and Taiwan life.</span>
+    </footer>
+  </div>
+  <script>
+    (function() {
+      var btn = document.getElementById('theme-toggle');
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      }
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>
