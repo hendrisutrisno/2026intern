@@ -36,3 +36,4 @@ intern:
   focus: "Your research focus"
   summary: "A short introduction in your own words."
   looking_back: "My final reflections; update this near the end of my stay."
+  # postcard_image: "/assets/photos/postcard.jpeg"  # Optional: set a photo path to replace the illustrated postcard on the home page.

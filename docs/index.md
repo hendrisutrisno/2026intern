@@ -24,6 +24,9 @@ title: My Taiwan Internship Journey
   <div class="hero-visual" aria-hidden="true">
     <div class="postcard">
       <div class="postcard-top"><span>POSTCARD FROM TAIWAN</span><span>TAIPEI · NTUT</span></div>
+      {% if site.intern.postcard_image %}
+        <img src="{{ site.intern.postcard_image | relative_url }}" alt="Postcard" class="postcard-bg-img">
+      {% else %}
       <div class="scene">
         <div class="scene-sun"></div>
         <div class="scene-cloud cloud-one"></div>
@@ -32,6 +35,7 @@ title: My Taiwan Internship Journey
         <div class="scene-hill hill-front"></div>
         <div class="scene-tower"></div>
       </div>
+      {% endif %}
       <div class="postcard-message">New ideas.<br>New places.<br><em>Good memories.</em></div>
       <div class="postcard-bottom">RESEARCH <span>✳</span> EXPLORE <span>✳</span> GROW</div>
     </div>

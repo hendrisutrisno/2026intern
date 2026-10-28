@@ -395,6 +395,14 @@ p {
   color: var(--teal);
 }
 
+.postcard-bg-img {
+  position: absolute;
+  inset: 42px 0 60px;
+  width: 100%;
+  height: calc(100% - 102px);
+  object-fit: cover;
+}
+
 [data-theme="light"] .scene {
   position: absolute;
   inset: 42px 0 60px;
